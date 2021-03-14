@@ -37,3 +37,15 @@ print(f'Total: ${total}')
 print(f'Average  Change: ${avg_chng}')
 print(f'Greatest Increase in Profits: {greatest_increase_date} ({greatest_increase})')
 print(f'Greatest Decrease in Profits: {greatest_decrease_date} ({greatest_decrease})')
+
+
+file = open("main.txt","w+")
+file.write('Financial Analysis \n'
+           '----------------------------- \n'
+           'Total Months: ' + str(total_mths) + '\n'
+           'Total: $' + str(total) + ' \n'
+           'Average  Change: $' + str(avg_chng) + '\n'
+           'Greatest Increase in Profits: ' + greatest_increase_date + ' ' + str(greatest_increase) + '\n'
+           'Greatest Decrease in Profits: ' + greatest_decrease_date + ' ' + str(greatest_decrease)
+)
+file.close() 
